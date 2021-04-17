@@ -1,0 +1,61 @@
+/* Contacts section */
+
+.contacts {
+  padding-top: $p200;
+}
+
+.contacts__header {
+  max-width: 572px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts__header__title {
+  h1 {
+    @include mont48Bold();
+  }
+}
+
+.contacts__header__suptitle {
+  h4 {
+    @include mont14Regular();
+  }
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: $p64;
+}
+
+.contacts__item {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: $p64;
+}
+
+.contacts__item__icon {
+  i {
+    color: $blue;
+    font-size: 35px;
+  }
+}
+
+.contacts__item__title {
+  padding-top: $p16;
+  padding-bottom: $p16;
+
+  h2 {
+    @include mont24Bold();
+  }
+}
+
+.contacts__item__suptitle {
+  h4 {
+    @include mont14Regular();
+  }
+}

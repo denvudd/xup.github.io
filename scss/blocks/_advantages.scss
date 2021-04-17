@@ -1,0 +1,24 @@
+.advantages {
+  padding-top: $p104;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.advantages__title {
+  h1 {
+    @include mont48ExtraBold();
+  }
+
+  padding-right: $p48;
+  width: 540px;
+}
+
+.advantages__photo {
+  img {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+}

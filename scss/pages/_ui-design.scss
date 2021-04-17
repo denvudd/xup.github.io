@@ -1,0 +1,66 @@
+.intro {
+  padding-bottom: 0;
+}
+
+.intro__button {
+  padding-bottom: $p286;
+}
+
+.team__text--1 {
+  word-break: break-all;
+}
+
+.team__text--2 {
+  word-break: break-all;
+}
+
+/* Cooperation section */
+
+.cooperation__gallery__item {
+  min-height: 460px;
+}
+
+/* Stages section */
+
+.stages__col {
+  justify-content: flex-start;
+}
+
+.stage {
+  margin-bottom: 96px;
+
+  h4 {
+    @include mont24Bold();
+  }
+
+  h5 {
+    @include mont14Regular();
+    padding-top: $p16;
+  }
+
+}
+
+
+
+
+@media #{$lg} {
+  .examples {
+    padding-bottom: $p104;
+  }
+}
+
+@media #{$xs} {
+  .examples {
+    padding-bottom: $p104;
+  }
+
+  .intro__button {
+    padding-bottom: $p64;
+  }
+
+  .timeline {
+    &::after {
+      height: auto;
+    }
+  }
+}

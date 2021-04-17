@@ -1,0 +1,21 @@
+.outsource-profit__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.outsource-profit__title {
+  h1 {
+    @include mont48ExtraBold();
+  }
+
+  padding-left: $p48;
+  width: 540px;
+}
+
+.outsource-profit__photo {
+  img {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,155 @@
+/* Tradex intro section */
+
+.tradex__intro {
+  padding-top: $p200;
+  padding-bottom: $p104;
+}
+
+.tradex__intro__photo {
+  text-align: center;
+}
+
+.count__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.tradex__intro__count {
+  padding-top: $p48;
+}
+
+.count__item {
+  margin-right: $p104;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.data-number {
+  @include mont64Bold();
+}
+
+.count__title {
+  @include mont14Regular();
+}
+
+.tasks {
+  padding-bottom: $p32;
+}
+
+.persons__photo__inner {
+  text-align: center;
+
+  img {
+    border-radius: 8px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+}
+
+.journeyMap {
+  padding-top: $p104;
+}
+
+.architecture {
+  padding-top: $p48;
+}
+
+/* Mini Gallery */
+
+.miniGallery__inner {
+  text-align: center;
+}
+
+.miniGallery__item {
+  margin-bottom: $p64;
+
+  img {
+    border-radius: 8px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+}
+
+@media #{$md} {
+  .tradex__intro__photo {
+    img {
+      width: 649px;
+      height: 386px;
+    }
+  }
+
+  .persons__photo__inner {
+    img {
+      width: 692px;
+      height: 357px;
+    }
+  }
+
+  .miniGallery__inner {
+    img {
+      width: 692px;
+      height: 357px;
+    }
+  }
+
+  .count__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .count__item {
+    margin-right: $p64;
+  }
+}
+
+@media #{$xs} {
+  .tradex__intro__photo {
+    img {
+      width: 328px;
+      height: 196px;
+    }
+  }
+
+  .count__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .count__item {
+    margin-right: $p32;
+    margin-left: $p32;
+  }
+
+  .persons__photo__inner {
+    img {
+      width: 328px;
+      height: 142px;
+    }
+  }
+
+  .miniGallery__inner {
+    img {
+      width: 328px;
+      height: 142px;
+    }
+  }
+
+  .cooperation__gallery__suptitle {
+    min-height: auto;
+  }
+
+  .intro__button {
+    padding-bottom: $p64;
+  }
+
+  .timeline {
+    &::after {
+      height: auto;
+    }
+  }
+}

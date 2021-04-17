@@ -1,0 +1,122 @@
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Tahoma, sans-serif;
+  font-size: 16px;
+  color: $black;
+  line-height: 1.6;
+  font-weight: bold;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section__header {
+  text-align: center;
+  width: 1128px;
+  margin: 0 auto;
+  padding-bottom: $p64;
+}
+
+.section__title {
+  h1 {
+    @include mont48ExtraBold();
+  }
+}
+
+.section__suptitle {
+  h4 {
+    @include mont14Regular();
+  }
+
+  padding-top: $p24;
+}
+
+.wordBlue {
+  color: $blue;
+}
+
+.wordBreak {
+  word-break: break-all;
+}
+
+.section__team__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: $p200;
+}
+
+.team__text--1 {
+  width: 328px;
+  padding-right: $p48;
+  word-break: break-all;
+
+  h1 {
+    @include mont48Bold ();
+  }
+}
+
+.team__text--2 {
+  max-width: 328px;
+  display: flex;
+  align-items: flex-end;
+  word-break: break-all;
+
+  p {
+    @include mont14Regular();
+  }
+}
+
+.team__photo {
+  max-width: 376px;
+  height: 400px;
+}
+
+.list {
+  li {
+    color: $blue;
+  }
+
+  li span {
+    color: $black;
+  }
+}
+
+.listN {
+  li {
+    color: $blue;
+    @include mont14SemiBold();
+  }
+
+  p {
+    padding-left: $p16;
+  }
+
+  li span {
+    color: $black;
+  }
+}

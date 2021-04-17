@@ -1,0 +1,38 @@
+.section__team__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: $p200;
+}
+
+.team__text--1 {
+  width: 328px;
+  padding-right: $p48;
+  word-break: break-all;
+
+  h1 {
+    @include mont48Bold ();
+  }
+}
+
+.team__text--2 {
+  max-width: 328px;
+  display: flex;
+  align-items: flex-end;
+
+  p {
+    @include mont14Regular();
+  }
+}
+
+.team__photo__inner {
+  box-sizing: border-box;
+
+  img {
+    width: 376px;
+    height: 400px;
+    margin-right: $p48;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 8px;
+  }
+}

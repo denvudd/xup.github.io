@@ -1,0 +1,107 @@
+.examples__gallery__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.examples__gallery__item {
+  position: relative;
+  background: $blue;
+  border-radius: 8px;
+  margin-right: $p48;
+  margin-left: $p48;
+  margin-bottom: $p48;
+  cursor: pointer;
+}
+
+.examples__gallery__photo {
+  img {
+    display: block;
+    transition: opacity .2s linear;
+    max-width: 100%;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 8px;
+  }
+}
+
+.examples__item__text {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  z-index: 100;
+  padding: 368px $p24 $p24 $p24;
+
+  transition: opacity .2s linear;
+
+  width: 100%;
+}
+
+.examples__gallery__title {
+  h4 {
+    @include mont24Bold();
+    color: $white;
+  }
+}
+
+.examples__gallery__suptitle {
+  h4 {
+    @include mont14Regular();
+    color: $white;
+    padding-top: $p8;
+    padding-bottom: $p24;
+  }
+}
+
+.gallery__button__inner {
+  a {
+    padding: 18px 32px;
+    background: $white;
+    border-radius: 8px;
+    text-decoration: none;
+    @include mont16BoldButtons();
+    color: $blue;
+  }
+}
+
+.examples__gallery__item {
+  &:hover .examples__gallery__photo {
+    img {
+      opacity: .1;
+    }
+  }
+}
+
+.examples__gallery__item {
+  &:hover .examples__item__text {
+    opacity: 1;
+  }
+}
+
+.examples__button {
+  padding-top: $p64;
+  padding-bottom: $p104;
+}
+
+.examples__button__inner {
+  display: flex;
+  justify-content: center;
+
+  a {
+    box-shadow: $buttonShadow;
+    @include buttonNormal1();
+  }
+
+  a:hover {
+    @include buttonHover1();
+  }
+
+  a:active {
+    @include buttonPressed1();
+  }
+
+  a:focus {
+    @include buttonDisabled1();
+  }
+}

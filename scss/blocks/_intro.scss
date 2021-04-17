@@ -1,0 +1,49 @@
+.intro {
+  padding-bottom: $p286;
+}
+
+.intro__inner {
+  padding-top: 286px;
+  text-align: center;
+}
+
+.intro__title {
+  @include mont48ExtraBold ();
+}
+
+.wordBlue {
+  color: $blue;
+}
+
+.intro__suptitle {
+  @include mont14Regular ();
+  padding-top: $p24;
+}
+
+.intro__button {
+  padding-top: $p64;
+
+}
+
+.intro__button__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonIntro {
+  box-shadow: $buttonShadow;
+  @include buttonNormal1 ();
+
+  &:hover {
+    @include buttonHover1();
+  }
+
+  &:active {
+    @include buttonPressed1();
+  }
+
+  &:focus {
+    @include buttonDisabled1();
+  }
+}

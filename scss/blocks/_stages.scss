@@ -1,0 +1,130 @@
+.stages {
+  padding-bottom: $p200;
+  margin: 0 auto;
+}
+
+.workStages {
+  padding-bottom: $p104;
+}
+
+.stages__wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: $p64;
+}
+
+.stages__inner {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.stages__col {
+  display: flex;
+  flex-direction: column;
+  left: 30%;
+  position: relative;
+}
+
+.stage {
+  margin-bottom: $p32;
+  left: 25%;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: -5.5%;
+    background-color: $blue;
+    box-shadow: 0px 0px 10px rgba(28, 84, 233, 0.5);
+    top: 7px;
+    border-radius: 50%;
+    z-index: 100;
+  }
+}
+
+.stage-type-1 {
+  margin-bottom: $p64;
+
+  &::after {
+    position: inherit;
+  }
+}
+
+.stage__col-type-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  left: 4.8%;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: $smallblue;
+    top: 15px;
+    bottom: 0;
+    left: 50%;
+    max-height: 100%;
+  }
+}
+
+.work__procces__photo {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.stages__text {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stages__title {
+  h3 {
+    @include mont24Bold();
+  }
+}
+
+.stages__title-type-1 {
+  h3 {
+    @include mont16Medium();
+  }
+}
+
+.stages__suptitle {
+  p {
+    @include mont14Regular();
+  }
+}
+
+.stages__row {
+  left: 25%;
+  margin-top: -10%;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: -5.2%;
+    background-color: $blue;
+    box-shadow: 0px 0px 10px rgba(28, 84, 233, 0.5);
+    top: 10px;
+    border-radius: 50%;
+    z-index: 100;
+  }
+}

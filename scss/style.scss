@@ -1,0 +1,71 @@
+/* Variebles */
+@import 'vars';
+@import 'mixin';
+
+/* Defaults */
+
+@import 'default';
+
+
+/* Header */
+@import 'header/header';
+/* Burger Menu */
+@import 'header/mobileMenu';
+/* Footer */
+@import 'footer/footer';
+/* SCROLL TOP/DOWN */
+@import 'blocks/scrollButton';
+
+
+/*=========== Sections ===========*/
+
+/* Loader */
+@import 'blocks/loader';
+/* Intro */
+@import 'blocks/intro';
+/* Section Team */
+@import 'blocks/section-team';
+/* What we do */
+@import 'blocks/weDo';
+/* Our Customers section */
+@import 'blocks/carousel';
+/* Complex Systems section */
+@import 'blocks/systems';
+/* Examples section */
+@import 'blocks/examples';
+/* Cooperation section */
+@import 'blocks/cooperation';
+/* Stages section */
+@import 'blocks/stages';
+/* Advantages section */
+@import 'blocks/advantages';
+/* Outsource-profit section */
+@import 'blocks/outsource';
+/* Bad Interface section */
+@import 'blocks/interface';
+/* Questions section */
+@import 'blocks/accordion';
+/* Rate Us section */
+@import 'blocks/contact-form';
+
+/*=========== Pages ===========*/
+
+/* Contacts Page */
+@import 'pages/contacts';
+/* Portfilio Page */
+@import 'pages/portfolio';
+/* Projection Page */
+@import 'pages/projection';
+/* Usability Page */
+@import 'pages/usability';
+/* UX-Analysis Page */
+@import 'pages/ux-analysis';
+/* Uber-Rent Page */
+@import 'pages/uber-rent';
+/* Tradex Page */
+@import 'pages/tradex';
+
+
+/* Responsive */
+
+@import 'responsive/responsive';

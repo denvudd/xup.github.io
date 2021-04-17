@@ -1,0 +1,12 @@
+.portfolio__examples {
+  padding-top: $p200;
+  padding-bottom: 0px;
+}
+
+@media #{$lg} {
+  /* Examples */
+
+  .examples {
+    padding-bottom: $p72;
+  }
+}

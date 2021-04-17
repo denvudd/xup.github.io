@@ -1,0 +1,52 @@
+.services__carousel {
+  position: relative;
+  width: 1470px;
+  margin: 0 auto;
+  padding-top: $p64;
+  padding-bottom: $p200;
+}
+
+.carousel__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carousel__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-right: $p72;
+  margin-bottom: $p48;
+}
+
+.carousel__title--bold {
+  @include mont30ExtraBold();
+  margin-right: $p72;
+  margin-bottom: $p48;
+}
+
+.underlineWord {
+  text-decoration: underline;
+}
+
+.effect1 {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 302px;
+  height: 216px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 22.56%, rgba(255, 255, 255, 0) 82.03%);
+}
+
+.effect2 {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  width: 302px;
+  height: 216px;
+  background: linear-gradient(270.44deg, rgba(255, 255, 255, 0.98) 46.22%, rgba(255, 255, 255, 0) 89.77%)
+}

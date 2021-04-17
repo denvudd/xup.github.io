@@ -1,0 +1,40 @@
+.systems {
+  padding-bottom: $p104;
+}
+
+.systems__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.systems__item {
+  width: 328px;
+  margin-right: $p72;
+  margin-bottom: $p48;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.systems__title {
+  padding-top: $p24;
+  text-align: center;
+
+  h3 {
+    @include mont24Bold();
+  }
+}
+
+.systems__item__photo {
+  img {
+    width: 328px;
+    height: 242px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 8px;
+  }
+
+}

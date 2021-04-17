@@ -1,0 +1,47 @@
+/* Intro */
+
+.intro {
+  padding-bottom: 0;
+}
+
+/* Stages section */
+
+.stages__col {
+  justify-content: flex-start;
+  left: 30%;
+  position: relative;
+}
+
+
+
+
+@media #{$lg} {
+
+  .cooperation__gallery__suptitle {
+    min-height: 210px;
+  }
+
+  .examples {
+    padding-bottom: $p104;
+  }
+}
+
+@media #{$xs} {
+  .cooperation__gallery__suptitle {
+    min-height: auto;
+  }
+
+  .examples {
+    padding-bottom: $p104;
+  }
+
+  .intro__button {
+    padding-bottom: $p64;
+  }
+
+  .timeline {
+    &::after {
+      height: auto;
+    }
+  }
+}

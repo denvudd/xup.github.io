@@ -1,0 +1,103 @@
+
+
+.questions__inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: $p200;
+}
+
+.accordion__wrapper {
+  margin-right: $p72;
+  max-width: 50%;
+  width: 50%;
+}
+
+
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.accordion-menu li {
+  max-width: 728px;
+}
+
+.accordion-menu {
+  max-width: 728px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.accordion-menu li.open .dropdownlink {
+  .fa-plus {
+    transform: rotate(45deg);
+    transition: 0.4s ease-out;
+  }
+}
+
+.dropdownlink {
+  cursor: pointer;
+  display: block;
+  padding: 18px 16px;
+  margin-bottom: $p16;
+  background: $gray;
+  transition: all 0.4s ease-out;
+
+  @include mont16BoldButtons();
+  color: $black;
+
+  i {
+    float: right;
+  }
+
+  .fa-chevron-down {
+    right: 12px;
+    left: auto;
+  }
+}
+
+.open {
+  .dropdownlink {
+    background: $smallblue;
+  }
+}
+
+.submenuItems {
+  display: none;
+  padding: 0px 16px 18px 16px;
+  background: $smallblue;
+  margin-top: -$p16;
+  margin-bottom: $p16;
+
+  p {
+    @include mont14Regular;
+  }
+
+  img {
+    text-align: center;
+    border-radius: 8px;
+  }
+}
+
+.questions__text {
+  min-width: 328px;
+}
+
+.questions__title {
+  h1 {
+    @include mont48ExtraBold();
+  }
+
+}
+
+.questions__suptitle {
+  h4 {
+    @include mont14Regular();
+  }
+
+}
